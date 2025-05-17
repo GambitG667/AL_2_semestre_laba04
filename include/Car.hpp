@@ -47,7 +47,7 @@ public:
         std::fill(std::begin(other.fuel_consumption), std::end(other.fuel_consumption), 0.0f);
     }
 
-    bool operator<(Car& other){
+    bool operator<(const Car& other) const{
         return fuel_consumption[2] < other.fuel_consumption[2];
     }
 
